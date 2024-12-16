@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixel Hunt</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Pixel Hunt</h1>
+
+    <div id="settings">
+      <label for="difficulty">Select Difficulty: </label>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <br /><br />
+      <label for="color">Select Square Color: </label>
+      <select id="color">
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="green">Green</option>
+      </select>
+      <br /><br />
+      <button id="start-button">Start</button>
+    </div>
+
+    <div id="game" class="hidden">
+      <p>Score: <span id="score">0</span></p>
+      <p>Clicks: <span id="clicks">0</span></p>
+      <p>Time left: <span id="timeLeft">30</span></p>
+      <div class="game-container" id="game-container"></div>
+    </div>
+
+    <div id="results" class="hidden">
+      <h2>Game Over</h2>
+      <p>Your Score: <span id="final-score"></span></p>
+      <p>Total Clicks: <span id="final-clicks"></span></p>
+      <button id="restart-button">Restart</button>
+    </div>
+  </body>
+  <script src="./index.js"></script>
+</html>

@@ -1,0 +1,23 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.game-container {
+  position: relative;
+  width: 100vw -2px;
+  height: 78vh;
+  border: 1px solid black;
+  margin: 20px auto;
+  overflow: hidden;
+}
+.square {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
